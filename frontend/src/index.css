@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 80px 40px rgba(0,0,0,0.1);
+  }
+
+  /* Avatar Interactive Styles */
+  .eyelid {
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    background: #d1d5db; /* gray-300 to match avatar background */
+    transform-origin: top;
+    transform: scaleY(0);
+    animation: blink 5s infinite;
+  }
+
+  @keyframes blink {
+    0%, 88%, 100% {
+      transform: scaleY(0);
+    }
+    90%, 92% {
+      transform: scaleY(1);
+    }
+    94% {
+      transform: scaleY(0);
+    }
+  }
+}
