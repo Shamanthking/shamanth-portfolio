@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Skills() {
   const skills = {
-    "Programming": ["Python", "C", "R"],
+    "Programming": ["JAVA", "Python", "C", "R"],
     "AI / ML": ["TensorFlow", "Keras", "scikit-learn", "OpenCV"],
     "Web Development": ["Django", "HTML", "CSS", "JavaScript"],
-    "Databases": ["MySQL","firebase"],
+    "Databases": ["MySQL"],
     "Tools": ["Git", "Power BI", "Excel", "Jupyter", "Google Colab"],
     "Core AI": ["Machine Learning","Deep Learning","Computer Vision","NLP"],
   };
